@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movies Finder</h1>
+        <div class="search-container">
+            <input type="text" id="movie-search" placeholder="Search for movies...">
+            <select id="genre-options">
+                <option value="">All Genres</option>
+            </select>
+            <select id="sort-options">
+                <option value="popularity.desc">Most Popular</option>
+                <option value="release_date.desc">Newest</option>
+                <option value="vote_average.desc">Top Rated</option>
+            </select>
+            <button id="search-button">Search</button>
+            <button id="watchlist-button">View Watchlist</button>
+            <button id="home-button">Home</button>
+        </div>
+    </header>
+    <section id="movie-grid"></section>
+    <section id="watchlist-grid" style="display: none;"></section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-btn">&times;</span>
+            <img id="movie-poster" src="" alt="Movie Poster">
+            <h2 id="movie-title"></h2>
+            <p id="movie-overview"></p>
+            <p id="movie-details"></p>
+            <p id="movie-cast"></p>
+            <button id="add-to-watchlist">Add to Watchlist</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Finder</h1>
+            <input type="text" id="search-input" placeholder="Search for recipes...">
+            <button id="search-btn">Search</button>
+            <button id="favorites-btn">Favorites</button>
+        </header>
+        <section id="recipe-grid"></section>
+        <section id="favorites-grid" style="display: none;"></section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close-btn">&times;</span>
+                <h2 id="recipe-title"></h2>
+                <img id="recipe-image" alt="Recipe Image">
+                <p id="recipe-description"></p>
+                <div id="nutrition-info"></div>
+                <ul id="ingredients-list"></ul>
+                <ol id="instructions-list"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
